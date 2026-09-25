@@ -4,6 +4,8 @@ Vite + TypeScript, GSAP, Matter.js and on-device MediaPipe. No React, no 3D.
 
 ## Development
 
+Use Node.js 22.12 or newer.
+
 - `npm install`
 - `npm run dev`
 - `npm run build`
@@ -21,6 +23,10 @@ Camera permission is explicit. Frames stay in memory and go only to a locally ru
 
 ## Deployment and review
 
-`vercel deploy --prod --yes --project snackstudio-site` publishes to the authenticated Vercel account. The custom domain must belong to that account before attaching it. GitHub publication uses a new `SnackStudio/snackstudio-site` repository; do not modify existing SnackStudio applications.
+`vercel deploy --prod --yes --scope snackstudios --project snackstudio-site` publishes to the authenticated Vercel account. The custom domain must belong to that account before attaching it. GitHub publication uses a new `SnackStudio/snackstudio-site` repository; do not modify existing SnackStudio applications.
 
 `npm run build` creates a fingerprinted offline shell and a real 404 document. `npm run audit` measures a mobile profile. Supplied PNG files remain the source of truth; any compressed delivery copies must preserve their geometry.
+
+`node scripts/capture.mjs` records a 90-second browser demonstration against the preview. `npm run format` formats source. The release evidence is in `deliverables/`; it distinguishes measured results from unverified physical and production requirements.
+
+The delivery image copies were generated with `cwebp -q 90` (and `-resize 128 128` for thumbnails). Original PNGs remain unchanged. Third-party notices are in THIRD_PARTY.md. The served model is Google's face-landmarker float16 version 1; WASM is copied from the locked MediaPipe package.

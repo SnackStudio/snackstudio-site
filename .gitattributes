@@ -1,0 +1,3 @@
+public/models/** linguist-vendored -diff -whitespace
+deliverables/lighthouse.report.* linguist-generated -whitespace
+*.csv text eol=lf
