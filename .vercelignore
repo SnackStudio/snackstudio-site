@@ -1,0 +1,5 @@
+deliverables/
+tests/
+playwright.config.ts
+scripts/capture.mjs
+.git/
