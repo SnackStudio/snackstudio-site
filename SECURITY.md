@@ -25,4 +25,4 @@ configuration are in scope. At the time of writing, the application source is on
 
 ## Supported versions
 
-There are no tagged releases. Only the current deployed site and the default branch receive fixes.
+There are no tagged releases. Only the default branch receives fixes.
