@@ -24,3 +24,11 @@ Camera permission is explicit. Frames stay in memory and go only to a locally ru
 `vercel deploy --prod --yes --project snackstudio-site` publishes to the authenticated Vercel account. The custom domain must belong to that account before attaching it. GitHub publication uses a new `SnackStudio/snackstudio-site` repository; do not modify existing SnackStudio applications.
 
 `npm run build` creates a fingerprinted offline shell and a real 404 document. `npm run audit` measures a mobile profile. Supplied PNG files remain the source of truth; any compressed delivery copies must preserve their geometry.
+
+## Status
+
+The default branch currently holds only this README, the license and `.gitignore`. The application source, the `npm` scripts above and the deliverables are on the `feat/edible-studio` branch (draft pull request #1). The package is private and untagged, and the repository has no CI workflow. See MECHANICS.md on that branch for limitations.
+
+## License
+
+MIT. See [LICENSE](LICENSE).
